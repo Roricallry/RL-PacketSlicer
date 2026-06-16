@@ -34,62 +34,6 @@
               "icon": "lucide-file",
               "title": "项目进度"
             }
-          },
-          {
-            "id": "fe7ebeb075bb9016",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RL-PacketSlicer/RL-PacketSlicer.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "RL-PacketSlicer"
-            }
-          },
-          {
-            "id": "fac93dc8ea8b718e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RL-PacketSlicer/RL-PacketSlicer.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "RL-PacketSlicer"
-            }
-          },
-          {
-            "id": "50324180e2b77c3d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "网络拓扑.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "网络拓扑"
-            }
-          },
-          {
-            "id": "b149ab87305bb494",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "个人日志.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "个人日志"
-            }
           }
         ],
         "currentTab": 1
@@ -257,12 +201,12 @@
   },
   "active": "ee0bc307a47799c2",
   "lastOpenFiles": [
+    "RL-PacketSlicer/使用说明书.md",
+    "项目进度.md",
     "个人日志.md",
     "RL-PacketSlicer/RL-PacketSlicer.md",
-    "项目进度.md",
     "repository/强化学习.md",
     "repository/信息熵（香农熵）.md",
-    "RL-PacketSlicer/使用说明书.md",
     "attachments/Pasted image 20260615103050.png",
     "RL-PacketSlicer/attachments/Pasted image 20260613095412.png",
     "RL-PacketSlicer/attachments/Pasted image 20260615092659.png",
