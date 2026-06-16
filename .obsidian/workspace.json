@@ -1,0 +1,278 @@
+{
+  "main": {
+    "id": "e1047da943c0bf39",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5918feddf0a7fb3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8bc7521c915f92b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RL-PacketSlicer/使用说明书.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "使用说明书"
+            }
+          },
+          {
+            "id": "ee0bc307a47799c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "项目进度.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "项目进度"
+            }
+          },
+          {
+            "id": "fe7ebeb075bb9016",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RL-PacketSlicer/RL-PacketSlicer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RL-PacketSlicer"
+            }
+          },
+          {
+            "id": "fac93dc8ea8b718e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RL-PacketSlicer/RL-PacketSlicer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "RL-PacketSlicer"
+            }
+          },
+          {
+            "id": "50324180e2b77c3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网络拓扑.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "网络拓扑"
+            }
+          },
+          {
+            "id": "b149ab87305bb494",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "个人日志.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "个人日志"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd1f019897d5a7af",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaa49c79e1eaa3a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b21a73b72516feb5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "b14163b57b8c7f27",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "bf760cc92eb6eed1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5bcd0ddccf95c72b",
+    "type": "split",
+    "children": [
+      {
+        "id": "f551673ac59f6b00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "565e218a7908ce08",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "待解决问题.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "待解决问题 的反向链接列表"
+            }
+          },
+          {
+            "id": "8039ac6d856e683e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "待解决问题.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "待解决问题 的出链列表"
+            }
+          },
+          {
+            "id": "f441a00b9f1399f9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "5a083b08f2ae2ef4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "5f277bee40c01941",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "待解决问题.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "待解决问题 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "ee0bc307a47799c2",
+  "lastOpenFiles": [
+    "个人日志.md",
+    "RL-PacketSlicer/RL-PacketSlicer.md",
+    "项目进度.md",
+    "repository/强化学习.md",
+    "repository/信息熵（香农熵）.md",
+    "RL-PacketSlicer/使用说明书.md",
+    "attachments/Pasted image 20260615103050.png",
+    "RL-PacketSlicer/attachments/Pasted image 20260613095412.png",
+    "RL-PacketSlicer/attachments/Pasted image 20260615092659.png",
+    "attachments/f71c2752c85a8e8f694bab825ea9b1b1.jpg",
+    "网络拓扑.md",
+    "RL-PacketSlicer/attachments/Pasted image 20260612144912.png",
+    "RL-PacketSlicer/attachments/Pasted image 20260612163210.png",
+    "RL-PacketSlicer/attachments",
+    "RL-PacketSlicer",
+    "奖励函数.md",
+    "attachments",
+    "repository"
+  ]
+}
