@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "一些可能会被问的问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "一些可能会被问的问题"
             }
           },
           {
@@ -193,14 +193,23 @@
               "icon": "lucide-list",
               "title": "README 的大纲"
             }
+          },
+          {
+            "id": "f8f3ebfe719851de",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,15 +225,19 @@
   },
   "active": "b848926c2d4c9cb9",
   "lastOpenFiles": [
+    "项目进度.md",
+    "RL-PacketSlicer-V2/测试/4.熵探针测试记录/2026.6.17.md",
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/attachments/cd6f2c55d8cb39a2625bb574bdfb3260.png",
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/attachments/c08a10c7e82906e106e0796cc018df8f 1.png",
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/attachments/c08a10c7e82906e106e0796cc018df8f.png",
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/attachments",
+    "README.md",
     "RL-PacketSlicer-V1/使用说明书.md",
     "RL-PacketSlicer-V1/RL-PacketSlicer.md",
-    "README.md",
-    "项目进度.md",
-    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
     "未命名",
     "网络拓扑.md",
     "一些可能会被问的问题.md",
-    "RL-PacketSlicer-V2/测试/4.熵探针测试记录/2026.6.17.md",
     "repository/信息熵（香农熵）.md",
     "repository/强化学习.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
@@ -238,9 +251,6 @@
     "attachments/Pasted image 20260616184035.png",
     "RL-PacketSlicer-V2/测试",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments/Pasted image 20260617171716.png",
-    "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments/Pasted image 20260617171652.png",
-    "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments/Pasted image 20260617164740.png",
-    "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments/Pasted image 20260617163625.png",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.17.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.16.md",
@@ -253,7 +263,6 @@
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/attachments",
     "RL-PacketSlicer-V2",
     "repository/四分位距法（IQR）.md",
-    "RL-PacketSlicer-V1/attachments",
     "奖励函数.md"
   ]
 }
