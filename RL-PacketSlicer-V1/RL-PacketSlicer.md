@@ -40,7 +40,3 @@ $$r = w * R_{norm} - (1-w) * (2 * L_{norm} + pmax_{penalty})$$
 
 
 
-
-util_collector.py使用方法：python3 util_collector.py --port 500【节点序号】 --name 【节点名称】
-
-
