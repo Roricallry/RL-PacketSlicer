@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/实验平台带宽测试记录/2026.6.16.md",
+                "file": "RL-PacketSlicer-V2/TCP时延测试记录/2026.6.17.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.6.16"
+              "title": "2026.6.17"
             }
           }
         ]
@@ -186,8 +186,10 @@
   },
   "active": "8bc7521c915f92b0",
   "lastOpenFiles": [
-    "repository/iperf3.md",
     "RL-PacketSlicer-V2/实验平台带宽测试记录/2026.6.16.md",
+    "RL-PacketSlicer-V2/TCP时延测试记录/2026.6.17.md",
+    "RL-PacketSlicer-V2/TCP时延测试记录",
+    "repository/iperf3.md",
     "RL-PacketSlicer-V2/ICMP时延测试记录/阶段总结.md",
     "RL-PacketSlicer-V2/实验平台带宽测试记录",
     "RL-PacketSlicer-V2/ICMP时延测试记录/2026.6.17.md",
