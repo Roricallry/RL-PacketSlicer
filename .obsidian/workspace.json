@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/ICMP时延测试记录/2026.6.17.md",
+                "file": "RL-PacketSlicer-V2/实验平台带宽测试记录/2026.6.16.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.6.17"
+              "title": "2026.6.16"
             }
           }
         ]
@@ -186,9 +186,13 @@
   },
   "active": "8bc7521c915f92b0",
   "lastOpenFiles": [
-    "RL-PacketSlicer-V2/ICMP时延测试记录/2026.6.16.md",
+    "repository/iperf3.md",
+    "RL-PacketSlicer-V2/实验平台带宽测试记录/2026.6.16.md",
     "RL-PacketSlicer-V2/ICMP时延测试记录/阶段总结.md",
+    "RL-PacketSlicer-V2/实验平台带宽测试记录",
     "RL-PacketSlicer-V2/ICMP时延测试记录/2026.6.17.md",
+    "一些可能会被问的问题.md",
+    "RL-PacketSlicer-V2/ICMP时延测试记录/2026.6.16.md",
     "RL-PacketSlicer-V2/ICMP时延测试记录/attachments/71d65b2b37f0192d71845df8f5fd5b94.png",
     "RL-PacketSlicer-V2/ICMP时延测试记录/attachments/scatter_raw-10-10.png",
     "RL-PacketSlicer-V2/ICMP时延测试记录/attachments/std_vs_load-10.png",
@@ -204,8 +208,6 @@
     "RL-PacketSlicer-V2",
     "个人日志.md",
     "网络拓扑.md",
-    "一些可能会被问的问题.md",
-    "repository/iperf3.md",
     "attachments/latency_vs_load.png",
     "RL-PacketSlicer-V1/RL-PacketSlicer.md",
     "repository/四分位距法（IQR）.md",
