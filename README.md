@@ -1,0 +1,5 @@
+Obsidian笔记备份
+
+文档图片在对应的文件夹内的attachments文件夹中
+
+主要内容（常更新）在根目录及RL-PacketSlicer-V2文件夹，repository目录下为一些项目相关知识。
