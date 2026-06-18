@@ -39,12 +39,14 @@
             "id": "c584b2471882c082",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/Drawing 2026-06-18 11.19.29.excalidraw.md"
+                "file": "网络拓扑.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-18 11.19.29.excalidraw"
+              "icon": "lucide-file",
+              "title": "网络拓扑"
             }
           }
         ],
@@ -226,8 +228,9 @@
   "active": "c584b2471882c082",
   "lastOpenFiles": [
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/Drawing 2026-06-18 11.19.29.excalidraw.md",
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/camera分割前后对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png",
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/分割后出现的规律TCP连接.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/2026.6.17.md",
@@ -259,7 +262,6 @@
     "未命名",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
     "attachments/20260616183001.png",
-    "attachments/20260615103050.png",
     "RL-PacketSlicer-V2/测试",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments",
     "RL-PacketSlicer-V2/测试/1.实验平台带宽测试记录/2026.6.16.md",
