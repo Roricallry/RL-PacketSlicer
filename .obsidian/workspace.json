@@ -39,12 +39,14 @@
             "id": "c584b2471882c082",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png"
+                "file": "个人日志.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "plug分割前后流量对比"
+              "icon": "lucide-file",
+              "title": "个人日志"
             }
           }
         ],
@@ -225,6 +227,7 @@
   },
   "active": "c584b2471882c082",
   "lastOpenFiles": [
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
     "网络拓扑.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
@@ -237,7 +240,6 @@
     "项目进度.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/gateway分割前后对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/camera分割前后对比.png",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/分割后出现的规律TCP连接.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments",
