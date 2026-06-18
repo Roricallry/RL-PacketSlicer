@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网络拓扑.md",
+                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "网络拓扑"
+              "title": "2026.6.18"
             }
           }
         ],
@@ -227,7 +227,12 @@
   },
   "active": "c584b2471882c082",
   "lastOpenFiles": [
+    "一些可能会被问的问题.md",
+    "README.md",
+    "项目进度.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/gateway分割前后对比.png",
+    "网络拓扑.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/camera分割前后对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.md",
@@ -240,10 +245,6 @@
     "RL-PacketSlicer-V1/RL-PacketSlicer.md",
     "RL-PacketSlicer-V2/简介.md",
     "个人日志.md",
-    "网络拓扑.md",
-    "项目进度.md",
-    "一些可能会被问的问题.md",
-    "README.md",
     "repository/iperf3.md",
     "repository/信息熵（香农熵）.md",
     "repository/四分位距法（IQR）.md",
@@ -261,7 +262,6 @@
     "RL-PacketSlicer-V1/使用说明书.md",
     "未命名",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
-    "attachments/20260616183001.png",
     "RL-PacketSlicer-V2/测试",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments",
     "RL-PacketSlicer-V2/测试/1.实验平台带宽测试记录/2026.6.16.md",
