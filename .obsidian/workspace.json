@@ -39,14 +39,12 @@
             "id": "c584b2471882c082",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
-                "mode": "source",
-                "source": false
+                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png"
               },
-              "icon": "lucide-file",
-              "title": "阶段性总结2026.6.18"
+              "icon": "lucide-image",
+              "title": "plug分割前后流量对比"
             }
           }
         ],
@@ -227,17 +225,17 @@
   },
   "active": "c584b2471882c082",
   "lastOpenFiles": [
-    "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
+    "网络拓扑.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
+    "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
     "repository/TLS.md",
     "个人日志.md",
     "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.18.md",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
     "一些可能会被问的问题.md",
     "README.md",
     "项目进度.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/gateway分割前后对比.png",
-    "网络拓扑.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/camera分割前后对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.md",
