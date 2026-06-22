@@ -13,44 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
+                "file": "RL-PacketSlicer-V2/PPOserver/设计.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.6.17"
-            }
-          },
-          {
-            "id": "b848926c2d4c9cb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026.6.18"
-            }
-          },
-          {
-            "id": "c584b2471882c082",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "阶段性总结2026.6.18"
+              "title": "设计"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,14 +196,15 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "c584b2471882c082",
+  "active": "8bc7521c915f92b0",
   "lastOpenFiles": [
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
     "RL-PacketSlicer-V2/PPOserver/设计.md",
     "项目进度.md",
     "RL-PacketSlicer-V2/PPOserver",
     "一些可能会被问的问题.md",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/2026.6.18.md",
     "个人日志.md",
     "网络拓扑.md",
     "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.18.md",
@@ -249,7 +221,6 @@
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/2026.6.17.md",
     "未命名.canvas",
-    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录",
     "RL-PacketSlicer-V1/RL-PacketSlicer.md",
     "RL-PacketSlicer-V2/简介.md",
