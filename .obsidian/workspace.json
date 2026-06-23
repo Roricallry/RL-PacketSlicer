@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "25a06856ea5b846b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-06-23 15.07.35.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-23 15.07.35.excalidraw"
+            }
+          },
+          {
             "id": "f3e709525e407c2d",
             "type": "leaf",
             "state": {
@@ -212,8 +224,10 @@
   },
   "active": "8bc7521c915f92b0",
   "lastOpenFiles": [
-    "repository/信息熵（香农熵）.md",
+    "Excalidraw/Drawing 2026-06-23 15.07.35.excalidraw.md",
     "项目进度.md",
+    "Excalidraw",
+    "repository/信息熵（香农熵）.md",
     "attachments/系统设计与实现情况总图.png",
     "attachments/Pasted image 20260622203750.png",
     "一些可能会被问的问题.md",
@@ -256,7 +270,6 @@
     "RL-PacketSlicer-V2/测试",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录",
-    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录",
-    "RL-PacketSlicer-V2/测试/1.实验平台带宽测试记录"
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录"
   ]
 }
