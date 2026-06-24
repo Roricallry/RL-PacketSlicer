@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "个人日志.md",
+                "file": "项目进度.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "个人日志"
+              "title": "项目进度"
             }
           },
           {
@@ -224,6 +224,7 @@
   },
   "active": "8bc7521c915f92b0",
   "lastOpenFiles": [
+    "个人日志.md",
     "项目进度.md",
     "Excalidraw/Drawing 2026-06-23 15.07.35.excalidraw.md",
     "Excalidraw",
@@ -231,7 +232,6 @@
     "attachments/系统设计与实现情况总图.png",
     "attachments/Pasted image 20260622203750.png",
     "一些可能会被问的问题.md",
-    "个人日志.md",
     "网络拓扑.md",
     "RL-PacketSlicer-V2/简介.md",
     "RL-PacketSlicer-V1/PPO模型训练存在问题.md",
