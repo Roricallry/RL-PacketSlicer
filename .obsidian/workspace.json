@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V1/使用说明书.md",
+                "file": "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/60网络负载.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "使用说明书"
+              "title": "60网络负载"
             }
           }
         ]
@@ -198,6 +198,14 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703001656.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703001603.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703000442.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703001112.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/60网络负载.md",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments",
+    "RL-PacketSlicer-V1/使用说明书.md",
     "项目难点.md",
     "repository/软演员-评论家算法.md",
     "repository/四分位距法（IQR）.md",
@@ -214,7 +222,6 @@
     "未命名",
     "Excalidraw/Drawing 2026-06-23 15.07.35.excalidraw.md",
     "一些可能会被问的问题.md",
-    "RL-PacketSlicer-V1/使用说明书.md",
     "RL-PacketSlicer-V1/RL-PacketSlicer.md",
     "RL-PacketSlicer-V1/PPO模型训练存在问题.md",
     "网络拓扑.md",
@@ -231,19 +238,12 @@
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.17.md",
     "attachments/系统设计与实现情况总图.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png",
-    "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
-    "README.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/gateway分割前后对比.png",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/camera分割前后对比.png",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/分割后出现的规律TCP连接.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments",
     "未命名.canvas",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录",
-    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/attachments/c08a10c7e82906e106e0796cc018df8f.png",
     "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/attachments",
     "RL-PacketSlicer-V2/测试",
-    "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments",
-    "RL-PacketSlicer-V2/测试/4.熵探针测试记录",
-    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录"
+    "RL-PacketSlicer-V2/测试/4.熵探针测试记录/attachments"
   ]
 }
