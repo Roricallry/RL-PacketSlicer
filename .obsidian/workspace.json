@@ -13,40 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "项目难点.md",
+                "file": "RL-PacketSlicer-V1/使用说明书.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "项目难点"
-            }
-          },
-          {
-            "id": "791c354768cbe2f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "repository/软演员-评论家算法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "软演员-评论家算法"
-            }
-          },
-          {
-            "id": "f3e709525e407c2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "repository/软演员-评论家算法.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "软演员-评论家算法"
+              "title": "使用说明书"
             }
           }
         ]
@@ -226,13 +198,13 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
+    "项目难点.md",
     "repository/软演员-评论家算法.md",
     "repository/四分位距法（IQR）.md",
     "repository/强化学习.md",
     "repository/信息熵（香农熵）.md",
     "repository/iperf3.md",
     "repository/TLS.md",
-    "项目难点.md",
     "项目目标.md",
     "RL-PacketSlicer-V2/简介.md",
     "RL-PacketSlicer-V1/attachments/Pasted image 20260615092659.png",
