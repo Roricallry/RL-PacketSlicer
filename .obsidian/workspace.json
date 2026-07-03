@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/60网络负载.md",
+                "file": "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/U70.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "60网络负载"
+              "title": "U70"
             }
           }
         ]
@@ -198,12 +198,14 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703001656.png",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703001603.png",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703000442.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/U60.md",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/U70.md",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Mean_Reward_at_U60.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Latency_at_U60.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Environment_Entropy_U60.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Policy_Entropy_at_U60.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/P_mean_at_U60.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments/Pasted image 20260703001112.png",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/60网络负载.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/attachments",
     "RL-PacketSlicer-V1/使用说明书.md",
     "项目难点.md",
@@ -237,8 +239,6 @@
     "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.18.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.17.md",
     "attachments/系统设计与实现情况总图.png",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/plug分割前后流量对比.png",
-    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments/gateway分割前后对比.png",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/attachments",
     "未命名.canvas",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录",
