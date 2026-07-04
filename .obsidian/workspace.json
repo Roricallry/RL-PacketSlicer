@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/U60.md",
+                "file": "RL-PacketSlicer-V1/使用说明书.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "U60"
+              "title": "使用说明书"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "U70"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,11 +210,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "25a06856ea5b846b",
+  "active": "8b048e7da067ad15",
   "lastOpenFiles": [
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/U60.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/U70.md",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter 1.png",
+    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/Mean_Reward_at_70.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/Latency_at_U70.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/Entropy_at_U70.png",
@@ -230,8 +230,6 @@
     "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.18.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/Mean_Reward_at_U60.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/Latency_at_U60.png",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/Environment_Entropy_U60.png",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/Policy_Entropy_at_U60.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments",
     "RL-PacketSlicer-V1/使用说明书.md",
