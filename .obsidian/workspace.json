@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "e5285e6727fd9fd0",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-07-06 11.32.52.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-07-06 11.32.52.excalidraw"
+            }
+          },
+          {
             "id": "25a06856ea5b846b",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "U70"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -210,8 +223,10 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "8b048e7da067ad15",
+  "active": "e5285e6727fd9fd0",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-07-06 11.32.52.excalidraw.md",
+    "RL-PacketSlicer-V1/使用说明书.md",
     "一些可能会被问的问题.md",
     "网络拓扑.md",
     "项目目标.md",
@@ -221,7 +236,6 @@
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n2.png",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录",
-    "RL-PacketSlicer-V1/使用说明书.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/U60.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/U70.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter 1.png",
