@@ -22,18 +22,6 @@
             }
           },
           {
-            "id": "e5285e6727fd9fd0",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-07-06 11.32.52.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-07-06 11.32.52.excalidraw"
-            }
-          },
-          {
             "id": "25a06856ea5b846b",
             "type": "leaf",
             "state": {
@@ -223,7 +211,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "e5285e6727fd9fd0",
+  "active": "25a06856ea5b846b",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-07-06 11.32.52.excalidraw.md",
     "RL-PacketSlicer-V1/使用说明书.md",
