@@ -11,12 +11,14 @@
             "id": "25a06856ea5b846b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n3.png"
+                "file": "repository/iperf3.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "entropy_scan_n3"
+              "icon": "lucide-file",
+              "title": "iperf3"
             }
           }
         ]
@@ -196,13 +198,13 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
-    "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n2.png",
+    "RL-PacketSlicer-V1/使用说明书.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n3.png",
+    "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n2.png",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/Drawing 2026-07-08 10.33.05.excalidraw.md",
     "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian/2026.7.8.md",
     "repository/软演员-评论家算法.md",
     "repository/四分位距法（IQR）.md",
-    "RL-PacketSlicer-V1/使用说明书.md",
     "个人日志.md",
     "项目难点.md",
     "repository/强化学习.md",
