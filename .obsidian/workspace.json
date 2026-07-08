@@ -32,9 +32,21 @@
               "icon": "lucide-image",
               "title": "entropy_scan_n3"
             }
+          },
+          {
+            "id": "0d40de239a32eddb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-07-08 11.29.51.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-07-08 11.29.51.excalidraw"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,10 +221,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "25a06856ea5b846b",
+  "active": "0d40de239a32eddb",
   "lastOpenFiles": [
-    "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/Drawing 2026-07-08 10.33.05.excalidraw.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n3.png",
+    "Excalidraw/Drawing 2026-07-08 11.29.51.excalidraw.md",
+    "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/Drawing 2026-07-08 10.33.05.excalidraw.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n2.png",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/2026.7.4.md",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/attachments/latency_scatter_simple_7_6.png",
@@ -254,7 +267,6 @@
     "repository/iperf3.md",
     "repository/TLS.md",
     "RL-PacketSlicer-V2/简介.md",
-    "Excalidraw/Drawing 2026-07-02 18.26.56.excalidraw.md",
     "未命名",
     "未命名.canvas"
   ]
