@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "repository/iperf3.md",
+                "file": "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/26.7.6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "iperf3"
+              "title": "26.7.6"
             }
           }
         ]
@@ -198,8 +198,13 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
-    "RL-PacketSlicer-V1/使用说明书.md",
+    "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
+    "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
+    "RL-PacketSlicer-V2/测试/1.实验平台带宽测试记录/2026.6.16.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n3.png",
+    "RL-PacketSlicer-V1/PPO模型训练存在问题.md",
+    "repository/iperf3.md",
+    "RL-PacketSlicer-V1/使用说明书.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n2.png",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/Drawing 2026-07-08 10.33.05.excalidraw.md",
     "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian/2026.7.8.md",
@@ -237,12 +242,8 @@
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1",
-    "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.16.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments",
-    "repository/信息熵（香农熵）.md",
-    "repository/iperf3.md",
-    "repository/TLS.md",
     "未命名.canvas"
   ]
 }
