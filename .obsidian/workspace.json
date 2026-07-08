@@ -25,28 +25,18 @@
             "id": "25a06856ea5b846b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n3.png"
+                "file": "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian/2026.7.8.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "entropy_scan_n3"
-            }
-          },
-          {
-            "id": "0d40de239a32eddb",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-07-08 11.29.51.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-07-08 11.29.51.excalidraw"
+              "icon": "lucide-file",
+              "title": "2026.7.8"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,9 +211,15 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "0d40de239a32eddb",
+  "active": "25a06856ea5b846b",
   "lastOpenFiles": [
+    "个人日志.md",
+    "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian/2026.7.8.md",
+    "项目难点.md",
+    "repository/软演员-评论家算法.md",
+    "repository/强化学习.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n3.png",
+    "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian",
     "Excalidraw/Drawing 2026-07-08 11.29.51.excalidraw.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/Drawing 2026-07-08 10.33.05.excalidraw.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n2.png",
@@ -232,7 +228,6 @@
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/U70.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/U60.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/U70.md",
-    "个人日志.md",
     "RL-PacketSlicer-V1/使用说明书.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter 1.png",
@@ -245,7 +240,6 @@
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/attachments",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/26.7.6.md",
     "项目目标.md",
-    "项目难点.md",
     "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
     "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.18.md",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/attachments",
@@ -260,14 +254,11 @@
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.16.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments",
-    "repository/软演员-评论家算法.md",
     "repository/四分位距法（IQR）.md",
-    "repository/强化学习.md",
     "repository/信息熵（香农熵）.md",
     "repository/iperf3.md",
     "repository/TLS.md",
     "RL-PacketSlicer-V2/简介.md",
-    "未命名",
     "未命名.canvas"
   ]
 }
