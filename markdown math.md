@@ -318,3 +318,6 @@ flalign
 array
 matrix
 cases
+
+
+$$reward = w \;\cdot\; \Delta entropy \; - \; (1-w)\;p$$
