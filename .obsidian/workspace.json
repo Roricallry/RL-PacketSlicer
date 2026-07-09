@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "repository/软演员-评论家算法.md",
+                "file": "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "软演员-评论家算法"
+              "title": "阶段性总结2026.6.18"
             }
           },
           {
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5,
-    "collapsed": true
+    "width": 279.5
   },
   "right": {
     "id": "5bcd0ddccf95c72b",
@@ -214,14 +213,20 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
+    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
+    "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
+    "RL-PacketSlicer-V2/测试/1.实验平台带宽测试记录/2026.6.16.md",
+    "RL-PacketSlicer-V1/RL-PacketSlicer.md",
+    "项目难点.md",
+    "项目目标.md",
     "markdown math.md",
+    "README.md",
+    "一些可能会被问的问题.md",
     "repository/软演员-评论家算法.md",
     "未命名.md",
     "未命名",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/26.7.6.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
-    "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
-    "RL-PacketSlicer-V2/测试/1.实验平台带宽测试记录/2026.6.16.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments/entropy_scan_n3.png",
     "RL-PacketSlicer-V1/PPO模型训练存在问题.md",
     "repository/iperf3.md",
@@ -231,7 +236,6 @@
     "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian/2026.7.8.md",
     "repository/四分位距法（IQR）.md",
     "个人日志.md",
-    "项目难点.md",
     "repository/强化学习.md",
     "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian",
     "Excalidraw/Drawing 2026-07-08 11.29.51.excalidraw.md",
@@ -243,18 +247,13 @@
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter 1.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/P_mean_at_U70.png",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/版本信息.md",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/attachments/step_summary_scatter.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/attachments/Pasted image 20260706191747.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/attachments/Pasted image 20260706191723.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/attachments/Pasted image 20260706191702.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/attachments",
-    "项目目标.md",
-    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.17.md",
-    "RL-PacketSlicer-V2/测试/3.TCP时延测试记录/2026.6.18.md",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/attachments",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录",
-    "Excalidraw/Drawing 2026-07-06 11.32.52.excalidraw.md",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录/attachments",
     "RL-PacketSlicer-V2/测试/7.分割概率p与信息熵的关系测试记录",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5",
