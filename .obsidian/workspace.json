@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 279.5,
+    "collapsed": true
   },
   "right": {
     "id": "5bcd0ddccf95c72b",
@@ -213,13 +214,14 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
+    "markdown math.md",
+    "repository/软演员-评论家算法.md",
     "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian/2026.7.8.md",
     "个人日志.md",
     "RL-PacketSlicer-V2/使用说明书.md",
     "项目难点.md",
     "项目目标.md",
     "网络拓扑.md",
-    "repository/软演员-评论家算法.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.17.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.16.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/阶段总结.md",
@@ -228,7 +230,6 @@
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/26.7.6.md",
     "RL-PacketSlicer-V2/测试/4.熵探针测试记录/2026.6.17.md",
     "RL-PacketSlicer-V2/测试/1.实验平台带宽测试记录/2026.6.16.md",
-    "markdown math.md",
     "README.md",
     "RL-PacketSlicer-V1/RL-PacketSlicer.md",
     "RL-PacketSlicer-V2/测试/5.数据包分割测试记录/阶段性总结2026.6.18.md",
