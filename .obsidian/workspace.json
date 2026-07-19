@@ -11,12 +11,14 @@
             "id": "25a06856ea5b846b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/Pasted image 20260624141737.png"
+                "file": "网络拓扑.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260624141737"
+              "icon": "lucide-file",
+              "title": "网络拓扑"
             }
           },
           {
@@ -211,12 +213,13 @@
   },
   "active": "25a06856ea5b846b",
   "lastOpenFiles": [
+    "项目目标.md",
+    "attachments/Pasted image 20260624141737.png",
     "attachments/20260615103050.png",
     "attachments/20260616183001.png",
     "attachments/系统设计与实现情况总图.png",
     "attachments/f71c2752c85a8e8f694bab825ea9b1b1.jpg",
     "attachments/latency_vs_load-20.png",
-    "attachments/Pasted image 20260624141737.png",
     "项目难点.md",
     "一些可能会被问的问题.md",
     "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian/2026.7.8.md",
@@ -224,7 +227,6 @@
     "markdown math.md",
     "个人日志.md",
     "RL-PacketSlicer-V2/使用说明书.md",
-    "项目目标.md",
     "网络拓扑.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.17.md",
     "RL-PacketSlicer-V2/测试/2.ICMP时延测试记录/2026.6.16.md",
@@ -248,7 +250,6 @@
     "RL-PacketSlicer-V2/测试/9.SAC-Lagrangian",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/attachments/latency_scatter_simple_7_6.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter.png",
-    "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.1/attachments/step_summary_scatter 1.png",
     "RL-PacketSlicer-V2/测试/6.PPO模型测试记录/V26.7.5/attachments",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录/attachments",
     "RL-PacketSlicer-V2/测试/8.分割概率p与时延的关系测试记录",
