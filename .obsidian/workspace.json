@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "5129152e88e642fd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.13.7"
+            }
+          },
+          {
             "id": "217aab9287fa09b5",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "markdown math"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -55,7 +68,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -211,7 +226,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "25a06856ea5b846b",
+  "active": "5129152e88e642fd",
   "lastOpenFiles": [
     "项目难点.md",
     "个人日志.md",
