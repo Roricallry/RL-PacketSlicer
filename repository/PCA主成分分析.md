@@ -84,6 +84,7 @@ X_pca = pca.fit_transform(X_scaled)
 print("各主成分方差贡献率：", pca.explained_variance_ratio_)
 print("累计贡献率：", pca.explained_variance_ratio_.cumsum())
 print("主成分方向：\n", pca.components_)
+
 plt.scatter(X_pca[:, 0], X_pca[:, 1], c=y)
 plt.xlabel("PC1")
 plt.ylabel("PC2")
@@ -101,14 +102,9 @@ print(X_pca.shape)
 ## 常见应用
 
 - 数据可视化：高维数据降到 2D/3D。
-    
 - 图像压缩：如人脸识别中的 Eigenfaces。
-    
 - 生物信息、金融、文本挖掘中的特征降维。
-    
 - 机器学习预处理，减少过拟合和噪声。
-    
 - 数据去相关和白化。
-    
 
 一句话总结：**PCA 通过找方差最大的正交方向，把高维数据投影到低维空间，在尽量保留原始信息的同时实现降维。**
