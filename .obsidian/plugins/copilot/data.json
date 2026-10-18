@@ -353,6 +353,7 @@
   "enableRecentConversations": true,
   "maxRecentConversations": 30,
   "enableSavedMemory": true,
+  "quickCommandModelKey": "4ab14cbb-f0a6-4ec8-89b5-43eded22397c",
   "quickCommandIncludeNoteContext": true,
   "autoAcceptEdits": false,
   "diffViewMode": "split",
@@ -363,7 +364,14 @@
   "agentMode": {
     "byok": {},
     "activeBackend": "opencode",
-    "backends": {},
+    "backends": {
+      "opencode": {
+        "defaultModel": {
+          "baseModelId": "deepseek/deepseek-flash",
+          "effort": "low"
+        }
+      }
+    },
     "debugFullFrames": true,
     "offerFeedbackCards": true,
     "notificationSound": true,
@@ -395,8 +403,8 @@
     "00ae7f6c-fc23-4a56-bca8-482819cde24b": {
       "providerType": "openai-compatible",
       "displayName": "DeepSeek",
-      "baseUrl": "https://ps.air-outer.com",
-      "enableCors": false,
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "enableCors": true,
       "requiresApiKey": true,
       "origin": {
         "kind": "byok",
@@ -420,36 +428,6 @@
     }
   },
   "configuredModels": [
-    {
-      "configuredModelId": "4ab14cbb-f0a6-4ec8-89b5-43eded22397c",
-      "providerId": "00ae7f6c-fc23-4a56-bca8-482819cde24b",
-      "info": {
-        "id": "deepseek-flash",
-        "displayName": "DeepSeek V4.1 Flash 1017",
-        "modalities": {
-          "input": [
-            "text",
-            "image"
-          ],
-          "output": [
-            "text"
-          ]
-        },
-        "limits": {
-          "context": 1000000,
-          "output": 393216
-        },
-        "reasoning": true,
-        "toolCall": true,
-        "releaseDate": "2026-10-17",
-        "cost": {
-          "input": 0.15,
-          "output": 0.6,
-          "cacheRead": 0.003
-        }
-      },
-      "configuredAt": 1792291925079
-    },
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
@@ -539,19 +517,60 @@
       },
       "configuredModelId": "f92d3f9a-628c-4976-b2f7-9c64ef7fe69a",
       "configuredAt": 1792292514550
+    },
+    {
+      "configuredModelId": "4ab14cbb-f0a6-4ec8-89b5-43eded22397c",
+      "providerId": "00ae7f6c-fc23-4a56-bca8-482819cde24b",
+      "info": {
+        "id": "deepseek-flash",
+        "displayName": "DeepSeek V4.1 Flash 1017",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "limits": {
+          "context": 1000000,
+          "output": 393216
+        },
+        "reasoning": true,
+        "toolCall": true,
+        "releaseDate": "2026-10-17",
+        "cost": {
+          "input": 0.15,
+          "output": 0.6,
+          "cacheRead": 0.003
+        }
+      },
+      "configuredAt": 1792291925079
+    },
+    {
+      "configuredModelId": "994536d9-1e5e-4dcb-893e-0eb811230cf4",
+      "providerId": "00ae7f6c-fc23-4a56-bca8-482819cde24b",
+      "info": {
+        "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+        "displayName": "deepseek-ai/DeepSeek-V4.1-Flash"
+      },
+      "configuredAt": 1792293854358
     }
   ],
   "backends": {
     "chat": {
       "enabledModels": [
-        "4ab14cbb-f0a6-4ec8-89b5-43eded22397c"
+        "4ab14cbb-f0a6-4ec8-89b5-43eded22397c",
+        "994536d9-1e5e-4dcb-893e-0eb811230cf4"
       ]
     },
     "opencode": {
       "enabledModels": [
         "4ab14cbb-f0a6-4ec8-89b5-43eded22397c",
         "83b1c4ce-107f-46ac-ba1c-73a1cc1c0ed7",
-        "9155fe55-77ab-4a28-b9fb-34c8130f73b5"
+        "9155fe55-77ab-4a28-b9fb-34c8130f73b5",
+        "994536d9-1e5e-4dcb-893e-0eb811230cf4"
       ]
     }
   },
