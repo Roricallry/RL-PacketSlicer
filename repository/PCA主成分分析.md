@@ -30,16 +30,11 @@ PCA 要找投影方向 $w$，使得投影后的方差最大：$$\max_{w} w^T\sum
 4. **选择主成分个数 $k$**
     
     - 按特征值从大到小排序。
-    - 累计方差贡献率：$$r_$$​
+    - 累计方差贡献率：$$r_k=\frac{\sum_{i=1}^{k}\lambda_i}{\sum^{d}_{i=1}\lambda_i}$$​
     - 常选累计贡献率达到 85%、90% 或 95%。
-        
     - 也可用碎石图、Kaiser 准则、交叉验证等。
-        
 5. **投影降维**
-    
-    Z=XcVkZ=Xc​Vk​
-    
-    ZZ 就是降维后的数据，维度为 n×kn×k。
+    $$Z=X_cV_k$$$Z$ 就是降维后的数据，维度为 $n\times k$。
     
 
 ## 优缺点
@@ -70,18 +65,22 @@ PCA 要找投影方向 $w$，使得投影后的方差最大：$$\max_{w} w^T\sum
 
 ## Python 示例
 
-python
+```python
 
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from sklearn.datasets import load_iris
 import matplotlib.pyplot as plt
+
 X, y = load_iris(return_X_y=True)
+
 # 标准化
 X_scaled = StandardScaler().fit_transform(X)
+
 # PCA 降维到 2 维
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
+
 print("各主成分方差贡献率：", pca.explained_variance_ratio_)
 print("累计贡献率：", pca.explained_variance_ratio_.cumsum())
 print("主成分方向：\n", pca.components_)
@@ -90,15 +89,15 @@ plt.xlabel("PC1")
 plt.ylabel("PC2")
 plt.title("PCA of Iris Dataset")
 plt.show()
-
+```
 如果想自动选择保留 95% 方差：
 
-python
+```python
 
 pca = PCA(n_components=0.95)
 X_pca = pca.fit_transform(X_scaled)
 print(X_pca.shape)
-
+```
 ## 常见应用
 
 - 数据可视化：高维数据降到 2D/3D。
