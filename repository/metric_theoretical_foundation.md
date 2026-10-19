@@ -1,4 +1,4 @@
-﻿---
+---
 title: 空口分帧混淆度量的理论基础
 aliases:
   - metric_theoretical_foundation

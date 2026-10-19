@@ -1,4 +1,4 @@
-﻿---
+---
 title: 四分位距法（IQR）
 aliases:
   - IQR

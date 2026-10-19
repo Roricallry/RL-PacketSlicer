@@ -1,4 +1,4 @@
-﻿---
+---
 title: 上下文赌博机（Contextual Bandit）
 aliases:
   - Contextual Bandit

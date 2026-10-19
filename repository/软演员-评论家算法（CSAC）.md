@@ -1,4 +1,4 @@
-﻿---
+---
 title: 软演员-评论家算法（CSAC）
 aliases:
   - SAC

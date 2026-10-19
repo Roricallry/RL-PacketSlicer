@@ -1,4 +1,4 @@
-﻿---
+---
 title: 相对于 baseline 的标准化
 aliases:
   - baseline 标准化

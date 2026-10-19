@@ -1,4 +1,4 @@
-﻿---
+---
 title: Z-score
 aliases:
   - 标准分数
