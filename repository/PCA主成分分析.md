@@ -1,7 +1,15 @@
 ---
+title: PCA 主成分分析
+aliases:
+  - PCA
+  - Principal Component Analysis
+  - 主成分分析
 tags:
-  - 机器学习
-  - 降维
+  - 机器学习/降维
+  - 统计/特征提取
+type: method
+status: evergreen
+created: 2026-10-18
 ---
 >**PCA（Principal Component Analysis，主成分分析）** 是一种常用的**无监督线性降维方法**。它通过正交变换，把原来可能相关的多个变量转换为一组**线性不相关**的新变量，称为“主成分”。其中第一主成分方差最大，第二主成分在与第一主成分正交的方向上方差最大，依次类推。
 

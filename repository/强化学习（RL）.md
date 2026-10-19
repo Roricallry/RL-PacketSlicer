@@ -1,3 +1,15 @@
+﻿---
+title: 强化学习（RL）
+aliases:
+  - Reinforcement Learning
+  - RL
+tags:
+  - 机器学习/强化学习
+type: concept
+status: developing
+created: 2026-09-08
+---
+
 >强化学习（Reinforcement Learning, RL）是让一个智能体（Agent）通过反复试错，从环境中获得奖励或惩罚，自己学会“什么状态下该做什么动作”的方法。
 
 ##### 四个关键要素（每个项目都必须定义清楚）

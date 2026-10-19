@@ -369,7 +369,8 @@
         "defaultModel": {
           "baseModelId": "deepseek/deepseek-flash",
           "effort": "low"
-        }
+        },
+        "defaultMode": "default"
       }
     },
     "debugFullFrames": true,

@@ -1,3 +1,17 @@
+﻿---
+title: 软演员-评论家算法（CSAC）
+aliases:
+  - SAC
+  - Soft Actor-Critic
+  - SAC-Lagrangian
+  - Constrained SAC
+tags:
+  - 机器学习/强化学习
+  - 机器学习/约束优化
+type: method
+status: developing
+created: 2026-09-08
+---
 
 SAC-Lagrangian（Constrained SAC）
 

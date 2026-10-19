@@ -1,4 +1,18 @@
-
+﻿---
+title: TLS
+aliases:
+  - TLS 协议
+  - Transport Layer Security
+  - 记录层
+  - 握手层
+tags:
+  - 网络安全/协议
+  - 网络安全/加密
+  - 网络协议/传输层
+type: concept
+status: developing
+created: 2026-09-08
+---
 
 TLS协议主要分为**记录层（Record Layer）** 和**握手层（Handshake Layer）**，它们各自有不同的头部字段。
 

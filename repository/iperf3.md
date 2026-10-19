@@ -1,3 +1,16 @@
+---
+title: iperf3
+aliases:
+  - iperf3
+  - Iperf3
+tags:
+  - 工具/网络测试
+  - 工具/性能测量
+  - 网络/带宽测量
+type: tool
+status: developing
+created: 2026-09-08
+---
 
 服务端执行：
 ```sh

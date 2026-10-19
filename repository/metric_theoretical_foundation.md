@@ -1,3 +1,17 @@
+﻿---
+title: 空口分帧混淆度量的理论基础
+aliases:
+  - metric_theoretical_foundation
+  - log2 W / n 度量
+tags:
+  - 网络/流量分析
+  - 网络/空口分帧
+  - 数学/信息论
+type: doc
+status: developing
+created: 2026-10-18
+---
+
 # 空口分帧混淆度量（$\log_2 W / n$）的理论渊源与数学依据
 
 > **文档说明**：本文档专门阐述本项目提出的空口分帧切分歧义度量（$\log_2 W / n_{\text{frames}}$ 与 $\log_2 W / n_{\text{packets}}$）的**理论由来、数学推导与设计正当性**。  

@@ -3,10 +3,14 @@ title: Dirichlet 分布
 aliases:
   - 狄利克雷分布
   - Dirichlet Distribution
+  - Dirichlet
 tags:
   - 数学/概率论
   - 机器学习
-  - 网络安全/流量分割
+  - 网络安全/流量分析
+type: concept
+status: developing
+created: 2026-10-18
 ---
 
 # Dirichlet 分布（狄利克雷分布）

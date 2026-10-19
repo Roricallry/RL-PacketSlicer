@@ -1,3 +1,17 @@
+﻿---
+title: 四分位距法（IQR）
+aliases:
+  - IQR
+  - 四分位距
+  - Interquartile Range
+  - 箱线图法
+tags:
+  - 统计/描述统计
+  - 统计/异常值检测
+type: method
+status: developing
+created: 2026-09-08
+---
 
 #### 1. 核心概念
 将数值从小到大排成一排，然后切三刀：

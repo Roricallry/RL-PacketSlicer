@@ -1,3 +1,18 @@
+﻿---
+title: 上下文赌博机（Contextual Bandit）
+aliases:
+  - Contextual Bandit
+  - 上下文多臂赌博机
+  - LinUCB
+tags:
+  - 机器学习/强化学习
+  - 机器学习/在线学习
+  - 机器学习/探索-利用
+type: concept
+status: developing
+created: 2026-09-29
+---
+
 | 维度     | Contextual Bandit                      | 强化学习 RL                         |
 | ------ | -------------------------------------- | ------------------------------- |
 | 决策长度   | 每轮只做一次决策，做完就结束                         | 多步序列决策，动作影响后续                   |

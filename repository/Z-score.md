@@ -1,3 +1,16 @@
+﻿---
+title: Z-score
+aliases:
+  - 标准分数
+  - z 分数
+  - 标准化
+tags:
+  - 统计/预处理
+  - 统计/标准化
+type: method
+status: evergreen
+created: 2026-09-08
+---
 
 ### 一、定义与公式
 **z-score（标准分数）** 是统计学中用来表示某个数据点相对于整体数据“偏离均值多少个标准差”的指标。
