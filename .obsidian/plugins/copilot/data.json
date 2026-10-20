@@ -370,7 +370,7 @@
           "baseModelId": "deepseek/deepseek-flash",
           "effort": "low"
         },
-        "defaultMode": "default"
+        "defaultMode": "auto"
       }
     },
     "debugFullFrames": true,
@@ -472,15 +472,6 @@
       },
       "configuredModelId": "b8c4d788-ac20-49c9-adc3-9e7416087f70",
       "configuredAt": 1792292511666
-    },
-    {
-      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
-      "info": {
-        "id": "opencode/space-bunny-free",
-        "displayName": "opencode/Space Bunny Free"
-      },
-      "configuredModelId": "37024bad-b02d-4e6a-aeb7-fb7661cdcfac",
-      "configuredAt": 1792292511667
     },
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
@@ -616,6 +607,15 @@
         "displayName": "minimax-m3"
       },
       "configuredAt": 1792392277810
+    },
+    {
+      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
+      "info": {
+        "id": "opencode/minimax-m3.1-flash-free",
+        "displayName": "opencode/MiniMax M3.1 Flash Free"
+      },
+      "configuredModelId": "b7174548-af65-4e88-9e8f-2bd28c2f11b5",
+      "configuredAt": 1792484287522
     }
   ],
   "backends": {
