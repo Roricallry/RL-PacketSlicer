@@ -425,6 +425,20 @@
       "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
       "addedAt": 1792392277770,
       "apiKeyKeychainId": "copilot-v1b2aaac8-provider-09402a79-9ec9-4e02-9f5c-867a2936450e"
+    },
+    "8d691b36-4f6b-4222-a9fc-504544a4a267": {
+      "providerType": "openai-compatible",
+      "displayName": "DeepSeek",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "enableCors": true,
+      "requiresApiKey": true,
+      "origin": {
+        "kind": "byok",
+        "catalogProviderId": "deepseek"
+      },
+      "providerId": "8d691b36-4f6b-4222-a9fc-504544a4a267",
+      "addedAt": 1793003562135,
+      "apiKeyKeychainId": "copilot-v1b2aaac8-provider-8d691b36-4f6b-4222-a9fc-504544a4a267"
     }
   },
   "configuredModels": [
@@ -501,58 +515,13 @@
       "configuredAt": 1792292514550
     },
     {
-      "configuredModelId": "ffae225e-5ca1-4adf-a558-04d448eb5285",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
+      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
-        "id": "deepseek-v4.1-flash",
-        "displayName": "deepseek-v4.1-flash"
+        "id": "opencode/flint-40b-free",
+        "displayName": "opencode/Flint 40B Free"
       },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "f2f3cd59-7c09-43e1-bec0-47c4f75eef3e",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "hy3",
-        "displayName": "hy3"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "1e8e8340-5c65-4115-8e9c-0a850eadc4d6",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "hy3-x",
-        "displayName": "hy3-x"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "feb3daa2-669b-447f-b0f0-cba22af7e875",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "hy4-preview",
-        "displayName": "hy4-preview"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "061ecb39-e5b6-4d43-9142-7e4def59b2d5",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "hy4-preview-x",
-        "displayName": "hy4-preview-x"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "1a481bb4-c3ba-4bcd-a9c2-ed4b859e5cd1",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "default",
-        "displayName": "default"
-      },
-      "configuredAt": 1792392277810
+      "configuredModelId": "3450c184-2af5-4299-a0c6-5c2338ce8cf9",
+      "configuredAt": 1792982106759
     },
     {
       "configuredModelId": "4b58503c-decc-44d2-9267-25a70fb910f7",
@@ -600,45 +569,77 @@
       "configuredAt": 1792392277810
     },
     {
-      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
+      "configuredModelId": "ffae225e-5ca1-4adf-a558-04d448eb5285",
+      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
       "info": {
-        "id": "opencode/flint-40b-free",
-        "displayName": "opencode/Flint 40B Free"
+        "id": "deepseek-v4.1-flash",
+        "displayName": "deepseek-v4.1-flash"
       },
-      "configuredModelId": "3450c184-2af5-4299-a0c6-5c2338ce8cf9",
-      "configuredAt": 1792982106759
+      "configuredAt": 1792392277810
+    },
+    {
+      "configuredModelId": "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
+      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
+      "info": {
+        "id": "kimi-k3.1-pro",
+        "displayName": "kimi-k3.1-pro"
+      },
+      "configuredAt": 1793002788298
+    },
+    {
+      "configuredModelId": "37a0ed81-478e-4a3f-8cce-e37920cbbeb2",
+      "providerId": "8d691b36-4f6b-4222-a9fc-504544a4a267",
+      "info": {
+        "id": "deepseek-flash",
+        "displayName": "DeepSeek V4.1 Flash 1017",
+        "modalities": {
+          "input": [
+            "text",
+            "image"
+          ],
+          "output": [
+            "text"
+          ]
+        },
+        "limits": {
+          "context": 1048576,
+          "output": 393216
+        },
+        "reasoning": true,
+        "toolCall": true,
+        "releaseDate": "2026-10-17",
+        "cost": {
+          "input": 0.15,
+          "output": 0.6,
+          "cacheRead": 0.003
+        }
+      },
+      "configuredAt": 1793003562151
     }
   ],
   "backends": {
     "chat": {
       "enabledModels": [
         "ffae225e-5ca1-4adf-a558-04d448eb5285",
-        "f2f3cd59-7c09-43e1-bec0-47c4f75eef3e",
-        "1e8e8340-5c65-4115-8e9c-0a850eadc4d6",
-        "feb3daa2-669b-447f-b0f0-cba22af7e875",
-        "061ecb39-e5b6-4d43-9142-7e4def59b2d5",
-        "1a481bb4-c3ba-4bcd-a9c2-ed4b859e5cd1",
         "4b58503c-decc-44d2-9267-25a70fb910f7",
         "4b8109be-f5de-4a9a-9c6d-c853fd1061df",
         "fac9b064-6868-40e5-8bef-9d2384396a0d",
         "830949eb-cfa1-4bc4-af18-acab2c546d06",
-        "26e59e61-d1d6-49d2-8cf1-7aa973b9745a"
+        "26e59e61-d1d6-49d2-8cf1-7aa973b9745a",
+        "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
+        "37a0ed81-478e-4a3f-8cce-e37920cbbeb2"
       ]
     },
     "opencode": {
       "enabledModels": [
-        "83b1c4ce-107f-46ac-ba1c-73a1cc1c0ed7",
         "ffae225e-5ca1-4adf-a558-04d448eb5285",
-        "f2f3cd59-7c09-43e1-bec0-47c4f75eef3e",
-        "1e8e8340-5c65-4115-8e9c-0a850eadc4d6",
-        "feb3daa2-669b-447f-b0f0-cba22af7e875",
-        "061ecb39-e5b6-4d43-9142-7e4def59b2d5",
-        "1a481bb4-c3ba-4bcd-a9c2-ed4b859e5cd1",
         "4b58503c-decc-44d2-9267-25a70fb910f7",
         "4b8109be-f5de-4a9a-9c6d-c853fd1061df",
         "fac9b064-6868-40e5-8bef-9d2384396a0d",
         "830949eb-cfa1-4bc4-af18-acab2c546d06",
-        "26e59e61-d1d6-49d2-8cf1-7aa973b9745a"
+        "26e59e61-d1d6-49d2-8cf1-7aa973b9745a",
+        "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
+        "37a0ed81-478e-4a3f-8cce-e37920cbbeb2"
       ]
     }
   },
