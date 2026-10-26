@@ -84,7 +84,7 @@ GRID_X, GRID_Y = 200.0, 175.0
 FIG_W, FIG_H = 15.0, 13.1
 IN = (FIG_W / GRID_X, FIG_H / GRID_Y)     # 1 网格单位对应的英寸数
 
-ax1 = fig.add_axes([0.03, 0.415, 0.94, 0.545], anchor="N")
+ax1 = fig.add_axes([0.03, 0.415, 0.94, 0.545])
 ax1.set_xlim(0, GRID_X)
 ax1.set_ylim(0, 100)
 ax1.set_aspect(IN[0] / IN[1])             # 保证 1 单位 x == 1 单位 y（不被拉伸）
@@ -101,8 +101,7 @@ ax1.set_title("① 协议栈视角：一个 TLS 记录被切成 3 个 TCP 段（
               fontsize=13.5, color=C_INK, loc="left", fontweight="bold", pad=12)
 
 X0 = 17.0                         # 条形起点（左侧留给段标签）
-SCALE = 0.60                      # 每字节占多少画布单位
-IP_W, TCP_W = 6.0, 9.0            # 头部色块宽度（纯示意，不按比例）
+SCALE = 0.54                      # 每字节占多少画布单位IP_W, TCP_W = 6.0, 9.0            # 头部色块宽度（纯示意，不按比例）
 ROW_H = 9.0                       # 条形高度
 
 # 右侧表格（与条形严格分列，不再互相压盖）
@@ -115,6 +114,14 @@ def seg_label(ax, y, title, color, sub):
     ax.text(X0 - 1.5, y + ROW_H / 2 + 1.4, title, ha="right", va="center",
             fontsize=10.0, color=color, fontweight="bold")
     ax.text(X0 - 1.5, y + ROW_H / 2 - 2.6, sub, ha="right", va="center",
+            fontsize=7.6, color=C_GRAY)
+
+
+def seg_label_right(ax, y, title, color, sub):
+    """第 2 段起改用右对齐标签：条短、右侧空白多，避免压到下一行。"""
+    ax.text(80.0, y + ROW_H / 2 + 1.4, title, ha="left", va="center",
+            fontsize=10.0, color=color, fontweight="bold")
+    ax.text(80.0, y + ROW_H / 2 - 2.6, sub, ha="left", va="center",
             fontsize=7.6, color=C_GRAY)
 
 
@@ -135,7 +142,7 @@ seg_label(ax1, Y_TOP, "切分前", C_GRAY, "1 帧 / 1 段")
 x = X0
 header_cell(ax1, x, Y_TOP, IP_W, "IP 头", "20 B")
 x += IP_W
-header_cell(ax1, x, Y_TOP, TCP_W, "TCP 头", "20 B，seq = S")
+header_cell(ax1, x, Y_TOP, TCP_W, "TCP 头", "20 B", fs=7.0)
 x += TCP_W
 
 rec_x = x
@@ -155,18 +162,20 @@ ax1.annotate("记录头 5 B\n(0x17 + 版本 + 长度)",
                              connectionstyle="angle3,angleA=90,angleB=0"))
 
 right_edge = rec_x + tls_hdr_w + 147 * SCALE
-ax1.text(right_edge + 2.0, Y_TOP + ROW_H / 2, "总长 192 B",
-         ha="left", va="center", fontsize=9.0, color=C_INK, fontweight="bold")
-ax1.text(right_edge + 2.0, Y_TOP - 3.0, "载荷偏移 0 … 152",
-         ha="left", va="center", fontsize=7.4, color=C_GRAY)
+ax1.text(right_edge + 1.6, Y_TOP + ROW_H / 2 + 1.4, "总长",
+         ha="left", va="center", fontsize=8.0, color=C_INK, fontweight="bold")
+ax1.text(right_edge + 1.6, Y_TOP + ROW_H / 2 - 1.6, "192 B",
+         ha="left", va="center", fontsize=8.0, color=C_INK, fontweight="bold")
+ax1.text(X0 - 1.5, Y_TOP - 4.4, "载荷偏移 0 … 152",
+         ha="right", va="center", fontsize=7.0, color=C_GRAY)
 
 # ---------- 中间：切分动作（横向箭头 + 模式标签）----------
-Y_ARROW = 60.0
-ax1.annotate("", xy=(X0 + 26, Y_ARROW), xytext=(X0 + 3, Y_ARROW),
+Y_ARROW = 61.6
+ax1.annotate("", xy=(X0 + 30, Y_ARROW), xytext=(X0 + 3, Y_ARROW),
              arrowprops=dict(arrowstyle="-|>", color=C_ORANGE, lw=1.6))
-ax1.text(X0 + 30, Y_ARROW, "fixed 模式：152 B → 133 / 8 / 11",
+ax1.text(X0 + 33, Y_ARROW, "fixed 模式：152 B → 133 / 8 / 11",
          ha="left", va="center", fontsize=8.6, color=C_ORANGE, fontweight="bold")
-ax1.text(X0 + 3, Y_ARROW - 3.6, "按固定长度切；random 模式则按长度区间选 L1~L4",
+ax1.text(X0 + 3, Y_ARROW + 3.4, "按固定长度切；random 模式则按长度区间选 L1~L4",
          ha="left", va="center", fontsize=7.2, color=C_GRAY)
 
 # ---------- 下排：切分后 3 个包 ----------
@@ -174,6 +183,8 @@ seg_lengths = [133, 8, 11]
 seg_colors = [C_PURPLE, C_GREEN, C_PURPLE]
 ROW_GAP = 5.0
 Y_SEG0 = 44.0
+Y_SEG_RIGHT_LABEL = 22.0          # 右侧标签的起点 y（第 2 段起标签改放右侧）
+LABEL_X_RIGHT = 80.0
 labels = [
     ("第 1 段（替换原包）", "seq = S", "IP.id = id"),
     ("第 2 段（新构造）", "seq = S + 133", "IP.id = id + 1"),
@@ -184,11 +195,14 @@ offs = 0
 seg_right = []
 for k, ln in enumerate(seg_lengths):
     y = Y_SEG0 - k * (ROW_H + ROW_GAP)
-    seg_label(ax1, y, labels[k][0], seg_colors[k], labels[k][1])
+    if k == 0:
+        seg_label(ax1, y, labels[k][0], seg_colors[k], labels[k][1])
+    else:
+        seg_label_right(ax1, y, labels[k][0], seg_colors[k], labels[k][1])
     x = X0
-    header_cell(ax1, x, y, IP_W, "IP 头", "20 B" if k == 0 else "20 B (id+%d)" % k)
+    header_cell(ax1, x, y, IP_W, "IP 头", "20 B" if k == 0 else "id+%d" % k)
     x += IP_W
-    header_cell(ax1, x, y, TCP_W, "TCP 头", "20 B" if k == 0 else "+20 B")
+    header_cell(ax1, x, y, TCP_W, "TCP 头", "+20 B")
     x += TCP_W
     w = ln * SCALE
     ax1.add_patch(Rectangle((x, y), w, ROW_H, facecolor=tint(seg_colors[k], 0.36),
@@ -200,22 +214,23 @@ for k, ln in enumerate(seg_lengths):
         hdr_w = 5 * SCALE
         ax1.add_patch(Rectangle((x, y), hdr_w, ROW_H, facecolor=C_RED,
                                 edgecolor="none", zorder=4))
-        ax1.annotate("记录头 5 B 完整落在第 1 段",
-                     xy=(x + hdr_w / 2, y + ROW_H),
-                     xytext=(x + 10, y + ROW_H + 5.0),
-                     fontsize=7.0, color=C_RED, ha="left", va="center",
-                     arrowprops=dict(arrowstyle="-", color=C_RED, lw=0.9,
-                                     connectionstyle="angle3,angleA=0,angleB=90"))
     ax1.text(x + w + 1.2, y + ROW_H / 2,
              "%s → 偏移 %d–%d" % (labels[k][2], offs, offs + ln),
-             ha="left", va="center", fontsize=6.9, color=C_GRAY)
+             ha="left", va="center", fontsize=6.6, color=C_GRAY)
+    if k == 0:  # 记录头标注放在条形正上方（第 1 段顶部无其它内容）
+        ax1.annotate("记录头 5 B 完整落在第 1 段",
+                     xy=(x + 2.5 * SCALE, y + ROW_H / 2),
+                     xytext=(x + 39.5, y + ROW_H + 0.8),
+                     fontsize=7.0, color=C_RED, ha="center", va="bottom",
+                     arrowprops=dict(arrowstyle="-", color=C_RED, lw=0.9,
+                                     connectionstyle="angle3,angleA=90,angleB=0"))
     seg_right.append((x + w, offs + ln))
     offs += ln
 
 # 段尾累计字节：把「三段拼起来仍是同一段字节流」画成一条递进虚线
 for (xr, cum) in seg_right[:-1]:
-    ax1.text(xr + 1.2, Y_SEG0 + ROW_H + 0.8, "累计 %d B" % cum,
-             fontsize=6.6, color=C_GRAY, ha="left", va="bottom")
+    ax1.text(xr + 1.2, Y_SEG0 - 2.6, "累计 %d B" % cum,
+             fontsize=6.6, color=C_GRAY, ha="left", va="top")
 
 # 左侧竖虚线：三段载荷是同一段字节流
 xl = X0 + 4.0
@@ -224,20 +239,20 @@ ax1.add_patch(FancyArrowPatch((xl, Y_SEG0 + ROW_H + 0.4),
                               arrowstyle="<|-|>", mutation_scale=8,
                               linewidth=0.9, color=C_GRAY,
                               linestyle=(0, (2, 2)), zorder=1))
-ax1.text(xl - 1.2, Y_SEG0 + ROW_H / 2, "", fontsize=1)  # 占位，保持左右留白稳定
 
-# ---------- 左侧底部：一句话结论 ----------
-ax1.text(X0 - 1.5, 8.0,
-         "三段共享同一段字节流：TCP seq 逐段累加，接收端按序\n"
-         "重组后仍是完整 TLS 记录，应用层无感。",
-         fontsize=8.0, color=C_INK, va="center", ha="left", linespacing=1.7)
+# 左侧底部：一句话结论
+ax1.text(xl + 3.0, 18.4,
+         "三段共享同一段字节流：TCP seq 逐段累加，\n"
+         "接收端按序重组后仍是完整 TLS 记录，应用层无感。",
+         fontsize=8.0, color=C_INK, va="top", ha="left", linespacing=1.7)
 
 # ---------- 右侧：变化 / 不变量 表 ----------
-TAB_TOP_Y = TAB_TOP
-box(ax1, TAB_X0 - 3.5, TAB_BOT, TAB_X1, TAB_TOP_Y, C_INK, alpha=0.025, lw=1.0,
+TAB_TOP = 84.0
+TAB_BOT = 10.0
+box(ax1, TAB_X0 - 3.5, TAB_BOT, TAB_X1, TAB_TOP, C_INK, alpha=0.025, lw=1.0,
     rounding=0.8)
 
-ax1.text(TAB_X0, TAB_TOP_Y - 4.6, "切分前后：谁变了、谁没变", fontsize=10.4,
+ax1.text(TAB_X0, TAB_TOP - 4.8, "切分前后：谁变了、谁没变", fontsize=10.4,
          color=C_INK, fontweight="bold", va="center")
 
 rows = [
@@ -254,8 +269,8 @@ rows = [
 INVARIANT = {"152 B（拼接等同）", "原样（3 段相同）", "147（仍在首段）",
              "按 seq 重组，无感"}
 
-ROW_STEP = 7.2
-HEAD_Y = TAB_TOP_Y - 10.4
+ROW_STEP = 6.6
+HEAD_Y = TAB_TOP - 9.8
 TAB_L, TAB_R = TAB_X0 - 2.2, TAB_X1 - 2.2
 ax1.plot([TAB_L, TAB_R], [HEAD_Y + 2.6, HEAD_Y + 2.6],
          color=C_LIGHT, lw=1.2, zorder=4)
@@ -276,12 +291,15 @@ for i, (name, before, after) in enumerate(rows):
              color=C_GREEN if after in INVARIANT else C_RED)
     yy -= ROW_STEP
 
-ax1.text(TAB_X0, yy - 0.6,
+ax1.text(TAB_X0, yy - 1.2,
          "绿色 = 不变量（接收端语义不变）    红色 = 变化量（本端可观测）",
          fontsize=7.2, color=C_GRAY, va="center")
-ax1.text(TAB_X0, yy - 5.4,
-         "标注的 IP.id / seq 偏移来自 splitter.py: send_segments()",
-         fontsize=7.0, color=C_GRAY, va="center", style="italic")
+ax1.text(TAB_X0, TAB_BOT + 2.6,
+         "IP.id / seq 偏移来自 splitter.py: send_segments()",
+         fontsize=6.8, color=C_GRAY, va="center", style="italic")
+ax1.text(TAB_X0, TAB_BOT + 6.6,
+         "三段拼接后 = 原 152 B 字节流，顺序与内容均未改变。",
+         fontsize=7.2, color=C_INK, va="center")
 
 # ==================================================== 下半：处理流水线
 ax2.set_title("② 数据面流水线：iptables → NFQUEUE → 过滤 → 切分 → 注入（executor/tcp_splitter）",
@@ -322,50 +340,50 @@ filters = [
     ("首字节不是 0x17？", "skip_non_tls", "放行：非 TLS AppData"),
     ("random() 不小于 p？", "skip_pval", "放行：不切"),
 ]
-fy = 131.6
+fy = 129.0
 for i, (cond, cnt, act) in enumerate(filters):
-    yy = fy - i * 5.0
+    yy = fy - i * 4.2
     ax2.text(FIL_X0 + 3.0, yy, "%d  %s" % (i + 1, cond), fontsize=7.2,
              color=C_INK, va="center")
-    ax2.text(FIL_X0 + 3.0, yy - 2.4, "→ %s（%s）" % (act, cnt), fontsize=6.6,
+    ax2.text(FIL_X0 + 3.0, yy - 2.1, "→ %s（%s）" % (act, cnt), fontsize=6.5,
              color=C_GRAY, va="center")
 
 # 兜底：与过滤链同区，放在链尾
-box(ax2, FIL_X0 + 3.0, 105.4, FIL_X1 - 3.0, 112.0, C_RED, alpha=0.07, lw=1.0,
+box(ax2, FIL_X0 + 3.0, 105.4, FIL_X1 - 3.0, 110.2, C_RED, alpha=0.07, lw=1.0,
     rounding=0.5)
-ax2.text((FIL_X0 + FIL_X1) / 2, 109.6, "异常兜底：except → 打印 + packet.accept()",
-         ha="center", va="center", fontsize=7.4, color=C_RED, fontweight="bold")
-ax2.text((FIL_X0 + FIL_X1) / 2, 106.9, "宁可少切一刀，也不丢包",
-         ha="center", va="center", fontsize=6.6, color=C_GRAY)
+ax2.text((FIL_X0 + FIL_X1) / 2, 108.8, "异常兜底：except → 打印 + packet.accept()",
+         ha="center", va="center", fontsize=7.2, color=C_RED, fontweight="bold")
+ax2.text((FIL_X0 + FIL_X1) / 2, 106.3, "宁可少切一刀，也不丢包",
+         ha="center", va="center", fontsize=6.4, color=C_GRAY)
 
 # ---------- 右下：并列两个小分区（控制面 / 熵测量旁路）----------
-box(ax2, 106.0, 105.0, 150.0, 136.0, C_INK, alpha=0.025, lw=1.0, rounding=0.7)
-ax2.text(128.0, 132.4, "控制面 Flask :5055", ha="center", va="center",
+box(ax2, 106.0, 105.0, 152.0, 138.0, C_INK, alpha=0.025, lw=1.0, rounding=0.7)
+ax2.text(129.0, 134.6, "控制面 Flask :5055", ha="center", va="center",
          fontsize=8.0, color=C_INK, fontweight="bold")
-ax2.text(128.0, 122.6,
-         "POST /start\n  设置 dst_ips + 装规则\n"
-         "POST /config\n  {p_value, segment_mode,\n   segment_count}（version+1）\n"
-         "POST /stop\n  清规则 + unbind",
-         ha="center", va="center", fontsize=6.6, color=C_GRAY, linespacing=1.45)
+ax2.text(129.0, 119.6,
+         "POST /start\n设置 dst_ips + 装规则\n\n"
+         "POST /config\n{p_value, segment_mode,\n segment_count}（version+1）\n\n"
+         "POST /stop\n清规则 + unbind",
+         ha="center", va="center", fontsize=6.5, color=C_GRAY, linespacing=1.4)
 
-box(ax2, 155.0, 105.0, 197.0, 136.0, C_PURPLE, alpha=0.045, lw=1.0, rounding=0.7)
-ax2.text(176.0, 132.4, "熵测量旁路（旁挂，不改包）", ha="center", va="center",
+box(ax2, 157.0, 105.0, 197.0, 138.0, C_PURPLE, alpha=0.045, lw=1.0, rounding=0.7)
+ax2.text(177.0, 134.6, "熵测量旁路（旁挂，不改包）", ha="center", va="center",
          fontsize=8.0, color=C_PURPLE, fontweight="bold")
-ax2.text(176.0, 122.4,
+ax2.text(177.0, 119.6,
          "record(dst, before_len,\n         after_lengths)\n"
-         "before 记原长，after 记各段长\n"
+         "before 原长 / after 各段长\n\n"
          "30 s 结算 shannon / Hmax / Hnorm\n"
          "GET /entropy/measure?duration=30",
-         ha="center", va="center", fontsize=6.6, color=C_GRAY, linespacing=1.45)
+         ha="center", va="center", fontsize=6.5, color=C_GRAY, linespacing=1.45)
 
 # 两条虚连线：控制面 → NFQUEUE（装规则/绑队列）；handle_packet → 旁路（只读上报）
-arrow(ax2, (112.0, 136.2), (112.0, NY0 - 0.8), color=C_INK, lw=1.0,
+arrow(ax2, (112.0, 138.2), (112.0, NY0 - 0.8), color=C_INK, lw=1.0,
       ls=(0, (3, 2)))
-ax2.text(108.6, 141.0, "装规则 / 改 p", fontsize=6.2, color=C_INK, va="center",
-         ha="right")
-arrow(ax2, (97.0, NY0 - 0.8), (160.0, 136.2), color=C_PURPLE, lw=1.0,
-      ls=(0, (3, 2)), rad=-0.15)
-ax2.text(140.0, 143.4, "只读上报 record()", fontsize=6.2, color=C_PURPLE,
+ax2.text(110.4, 140.6, "装规则 / 改 p", fontsize=6.2, color=C_INK,
+         va="center", ha="right")
+arrow(ax2, (95.0, NY0 - 0.8), (168.0, 138.2), color=C_PURPLE, lw=1.0,
+      ls=(0, (3, 2)), rad=-0.18)
+ax2.text(135.0, 143.6, "只读上报 record()", fontsize=6.2, color=C_PURPLE,
          va="center", ha="center")
 
 # 底部注释
