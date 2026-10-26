@@ -440,15 +440,6 @@
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
-        "id": "opencode/longcat-2.5-preview-free",
-        "displayName": "opencode/LongCat 2.5 Preview Free"
-      },
-      "configuredModelId": "9155fe55-77ab-4a28-b9fb-34c8130f73b5",
-      "configuredAt": 1792292511664
-    },
-    {
-      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
-      "info": {
         "id": "opencode/mimo-v2.6-flash-free",
         "displayName": "opencode/MiMo-V2.6-Flash Free"
       },
@@ -611,11 +602,11 @@
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
-        "id": "opencode/minimax-m3.1-flash-free",
-        "displayName": "opencode/MiniMax M3.1 Flash Free"
+        "id": "opencode/flint-40b-free",
+        "displayName": "opencode/Flint 40B Free"
       },
-      "configuredModelId": "b7174548-af65-4e88-9e8f-2bd28c2f11b5",
-      "configuredAt": 1792484287522
+      "configuredModelId": "3450c184-2af5-4299-a0c6-5c2338ce8cf9",
+      "configuredAt": 1792982106759
     }
   ],
   "backends": {
@@ -637,7 +628,6 @@
     "opencode": {
       "enabledModels": [
         "83b1c4ce-107f-46ac-ba1c-73a1cc1c0ed7",
-        "9155fe55-77ab-4a28-b9fb-34c8130f73b5",
         "ffae225e-5ca1-4adf-a558-04d448eb5285",
         "f2f3cd59-7c09-43e1-bec0-47c4f75eef3e",
         "1e8e8340-5c65-4115-8e9c-0a850eadc4d6",
