@@ -30,6 +30,7 @@
   "defaultSaveFolder": "copilot/copilot-conversations",
   "defaultConversationTag": "copilot-conversation",
   "autosaveChat": true,
+  "autoAttachActiveNote": true,
   "defaultOpenArea": "editor",
   "defaultSendShortcut": "enter",
   "customPromptsFolder": "copilot/copilot-custom-prompts",
@@ -323,7 +324,7 @@
   "enableCustomPromptTemplating": true,
   "enableSelfHostMode": false,
   "enableMiyo": false,
-  "enableMiyoSearchSkill": false,
+  "enableMiyoSearchSkill": true,
   "miyoSearchAll": false,
   "miyoExtraSearchFolders": [],
   "relevantNotesLiveUpdate": true,
@@ -368,7 +369,7 @@
       "opencode": {
         "defaultModel": {
           "baseModelId": "deepseek/deepseek-flash",
-          "effort": "low"
+          "effort": "none"
         },
         "defaultMode": "auto"
       }
@@ -424,21 +425,21 @@
       },
       "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
       "addedAt": 1792392277770,
-      "apiKeyKeychainId": "copilot-v1b2aaac8-provider-09402a79-9ec9-4e02-9f5c-867a2936450e"
+      "apiKeyKeychainId": "copilot-v1b2aaac8-provider-workbuddy-api-key"
     },
-    "8d691b36-4f6b-4222-a9fc-504544a4a267": {
+    "bdd3ca51-feae-4e83-af8c-6026d181b5b1": {
       "providerType": "openai-compatible",
       "displayName": "DeepSeek",
-      "baseUrl": "https://api.deepseek.com/v1",
-      "enableCors": true,
+      "baseUrl": "https://api.deepseek.com",
+      "enableCors": false,
       "requiresApiKey": true,
       "origin": {
         "kind": "byok",
         "catalogProviderId": "deepseek"
       },
-      "providerId": "8d691b36-4f6b-4222-a9fc-504544a4a267",
-      "addedAt": 1793003562135,
-      "apiKeyKeychainId": "copilot-v1b2aaac8-provider-8d691b36-4f6b-4222-a9fc-504544a4a267"
+      "providerId": "bdd3ca51-feae-4e83-af8c-6026d181b5b1",
+      "addedAt": 1793004204624,
+      "apiKeyKeychainId": "copilot-v1b2aaac8-provider-deepseek-api-key"
     }
   },
   "configuredModels": [
@@ -587,8 +588,8 @@
       "configuredAt": 1793002788298
     },
     {
-      "configuredModelId": "37a0ed81-478e-4a3f-8cce-e37920cbbeb2",
-      "providerId": "8d691b36-4f6b-4222-a9fc-504544a4a267",
+      "configuredModelId": "95304abb-b2ac-49fd-9f32-8c90468e8ded",
+      "providerId": "bdd3ca51-feae-4e83-af8c-6026d181b5b1",
       "info": {
         "id": "deepseek-flash",
         "displayName": "DeepSeek V4.1 Flash 1017",
@@ -614,7 +615,7 @@
           "cacheRead": 0.003
         }
       },
-      "configuredAt": 1793003562151
+      "configuredAt": 1793004204627
     }
   ],
   "backends": {
@@ -627,7 +628,7 @@
         "830949eb-cfa1-4bc4-af18-acab2c546d06",
         "26e59e61-d1d6-49d2-8cf1-7aa973b9745a",
         "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
-        "37a0ed81-478e-4a3f-8cce-e37920cbbeb2"
+        "95304abb-b2ac-49fd-9f32-8c90468e8ded"
       ]
     },
     "opencode": {
@@ -639,7 +640,7 @@
         "830949eb-cfa1-4bc4-af18-acab2c546d06",
         "26e59e61-d1d6-49d2-8cf1-7aa973b9745a",
         "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
-        "37a0ed81-478e-4a3f-8cce-e37920cbbeb2"
+        "95304abb-b2ac-49fd-9f32-8c90468e8ded"
       ]
     }
   },
@@ -813,5 +814,5 @@
   },
   "miyoConnectionMode": "local",
   "_keychainVaultId": "1b2aaac8",
-  "settingsVersion": 15
+  "settingsVersion": 16
 }
