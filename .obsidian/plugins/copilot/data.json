@@ -464,15 +464,6 @@
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
-        "id": "opencode/nemotron-3-ultra-free",
-        "displayName": "opencode/Nemotron 3 Ultra Free"
-      },
-      "configuredModelId": "2a83d5dc-c05f-4048-986b-ef6b0c33d76c",
-      "configuredAt": 1792292511666
-    },
-    {
-      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
-      "info": {
         "id": "opencode/nemotron-3.5-lightning-free",
         "displayName": "opencode/Nemotron 3.5 Lightning Free"
       },
