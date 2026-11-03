@@ -414,19 +414,6 @@
       "addedAt": 1792292511652,
       "apiKeyKeychainId": null
     },
-    "09402a79-9ec9-4e02-9f5c-867a2936450e": {
-      "providerType": "openai-compatible",
-      "displayName": "WorkBuddy",
-      "baseUrl": "http://127.0.0.1:8790/v1",
-      "enableCors": true,
-      "requiresApiKey": false,
-      "origin": {
-        "kind": "byok"
-      },
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "addedAt": 1792392277770,
-      "apiKeyKeychainId": "copilot-v1b2aaac8-provider-workbuddy-api-key"
-    },
     "bdd3ca51-feae-4e83-af8c-6026d181b5b1": {
       "providerType": "openai-compatible",
       "displayName": "DeepSeek",
@@ -516,69 +503,6 @@
       "configuredAt": 1792982106759
     },
     {
-      "configuredModelId": "4b58503c-decc-44d2-9267-25a70fb910f7",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "glm-5v-turbo",
-        "displayName": "glm-5v-turbo"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "4b8109be-f5de-4a9a-9c6d-c853fd1061df",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "glm-5.3",
-        "displayName": "glm-5.3"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "fac9b064-6868-40e5-8bef-9d2384396a0d",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "glm-5.3-flash",
-        "displayName": "glm-5.3-flash"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "830949eb-cfa1-4bc4-af18-acab2c546d06",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "kimi-k3-1",
-        "displayName": "kimi-k3-1"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "26e59e61-d1d6-49d2-8cf1-7aa973b9745a",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "minimax-m3",
-        "displayName": "minimax-m3"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "ffae225e-5ca1-4adf-a558-04d448eb5285",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "deepseek-v4.1-flash",
-        "displayName": "deepseek-v4.1-flash"
-      },
-      "configuredAt": 1792392277810
-    },
-    {
-      "configuredModelId": "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
-      "providerId": "09402a79-9ec9-4e02-9f5c-867a2936450e",
-      "info": {
-        "id": "kimi-k3.1-pro",
-        "displayName": "kimi-k3.1-pro"
-      },
-      "configuredAt": 1793002788298
-    },
-    {
       "configuredModelId": "95304abb-b2ac-49fd-9f32-8c90468e8ded",
       "providerId": "bdd3ca51-feae-4e83-af8c-6026d181b5b1",
       "info": {
@@ -607,30 +531,25 @@
         }
       },
       "configuredAt": 1793004204627
+    },
+    {
+      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
+      "info": {
+        "id": "opencode/pulse-alpha-free",
+        "displayName": "opencode/Pulse Alpha Free"
+      },
+      "configuredModelId": "6e7d4998-c02e-4182-bd1e-0c5b5df5c28e",
+      "configuredAt": 1793696103521
     }
   ],
   "backends": {
     "chat": {
       "enabledModels": [
-        "ffae225e-5ca1-4adf-a558-04d448eb5285",
-        "4b58503c-decc-44d2-9267-25a70fb910f7",
-        "4b8109be-f5de-4a9a-9c6d-c853fd1061df",
-        "fac9b064-6868-40e5-8bef-9d2384396a0d",
-        "830949eb-cfa1-4bc4-af18-acab2c546d06",
-        "26e59e61-d1d6-49d2-8cf1-7aa973b9745a",
-        "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
         "95304abb-b2ac-49fd-9f32-8c90468e8ded"
       ]
     },
     "opencode": {
       "enabledModels": [
-        "ffae225e-5ca1-4adf-a558-04d448eb5285",
-        "4b58503c-decc-44d2-9267-25a70fb910f7",
-        "4b8109be-f5de-4a9a-9c6d-c853fd1061df",
-        "fac9b064-6868-40e5-8bef-9d2384396a0d",
-        "830949eb-cfa1-4bc4-af18-acab2c546d06",
-        "26e59e61-d1d6-49d2-8cf1-7aa973b9745a",
-        "338d3e94-81fd-40f0-a9e1-0619e05a39e7",
         "95304abb-b2ac-49fd-9f32-8c90468e8ded"
       ]
     }
