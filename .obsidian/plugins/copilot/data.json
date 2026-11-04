@@ -379,7 +379,7 @@
     "debugFullFrames": true,
     "offerFeedbackCards": true,
     "notificationSound": true,
-    "notificationSoundId": "piano",
+    "notificationSoundId": "doorbell",
     "skills": {
       "folder": "copilot/skills",
       "builtinPreferences": {
@@ -398,6 +398,14 @@
           "binaryVersion": "2.0.32",
           "binarySource": "managed",
           "probeSessionId": "ses_eb30aa19fffeNY1Zd9lMARQ1R3"
+        }
+      },
+      "38005857-23c5-4203-acd5-edd906c96e4f": {
+        "opencode": {
+          "binaryPath": "C:\\Users\\14208\\.obsidian-copilot\\opencode\\2.0.32\\bin\\opencode.exe",
+          "binaryVersion": "2.0.32",
+          "binarySource": "managed",
+          "probeSessionId": "ses_e5abe7b00ffeVblr7lV364SQuC"
         }
       }
     }
@@ -461,15 +469,6 @@
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
-        "id": "opencode/beam-free",
-        "displayName": "opencode/Beam Free"
-      },
-      "configuredModelId": "baa195b5-c3e4-4080-abec-fca92b22eb6d",
-      "configuredAt": 1792292514545
-    },
-    {
-      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
-      "info": {
         "id": "opencode/deepseek-v4.1-flash-free",
         "displayName": "opencode/DeepSeek V4.1 Flash Free"
       },
@@ -493,15 +492,6 @@
       },
       "configuredModelId": "f92d3f9a-628c-4976-b2f7-9c64ef7fe69a",
       "configuredAt": 1792292514550
-    },
-    {
-      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
-      "info": {
-        "id": "opencode/flint-40b-free",
-        "displayName": "opencode/Flint 40B Free"
-      },
-      "configuredModelId": "3450c184-2af5-4299-a0c6-5c2338ce8cf9",
-      "configuredAt": 1792982106759
     },
     {
       "configuredModelId": "95304abb-b2ac-49fd-9f32-8c90468e8ded",
@@ -536,11 +526,11 @@
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
-        "id": "opencode/pulse-alpha-free",
-        "displayName": "opencode/Pulse Alpha Free"
+        "id": "opencode/beam-free",
+        "displayName": "opencode/Beam Free"
       },
-      "configuredModelId": "6e7d4998-c02e-4182-bd1e-0c5b5df5c28e",
-      "configuredAt": 1793696103521
+      "configuredModelId": "6c7c45d4-fc55-4ee1-91aa-fa6cc241b32d",
+      "configuredAt": 1793773900208
     },
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
@@ -548,8 +538,26 @@
         "id": "opencode/crouton-alpha-free",
         "displayName": "opencode/Crouton Alpha Free"
       },
-      "configuredModelId": "6d3c2c31-85b1-4b48-b639-1d8cefdc5006",
-      "configuredAt": 1793758105652
+      "configuredModelId": "6d8352c9-e4fd-4d17-8e53-15624de8114f",
+      "configuredAt": 1793773900208
+    },
+    {
+      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
+      "info": {
+        "id": "opencode/flint-40b-free",
+        "displayName": "opencode/Flint 40B Free"
+      },
+      "configuredModelId": "8746678c-a448-48b7-ab0f-9b36d5c4b94d",
+      "configuredAt": 1793773900209
+    },
+    {
+      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
+      "info": {
+        "id": "opencode/pulse-alpha-free",
+        "displayName": "opencode/Pulse Alpha Free"
+      },
+      "configuredModelId": "16d8780b-503a-47d1-8c29-c89cd9341d20",
+      "configuredAt": 1793773900209
     }
   ],
   "backends": {
