@@ -327,6 +327,8 @@
   "enableMiyoSearchSkill": true,
   "miyoSearchAll": false,
   "miyoExtraSearchFolders": [],
+  "miyoSearchMaxResults": 20,
+  "miyoSearchMaxVariants": 2,
   "relevantNotesLiveUpdate": true,
   "miyoServerUrl": "",
   "selfHostSearchProvider": "firecrawl",
@@ -378,7 +380,6 @@
     "offerFeedbackCards": true,
     "notificationSound": true,
     "notificationSoundId": "piano",
-    "welcomeDismissed": false,
     "skills": {
       "folder": "copilot/skills",
       "builtinPreferences": {
@@ -393,8 +394,8 @@
     "deviceProfiles": {
       "9cd466dc-6bcc-46c5-8b11-a7d7e1c273de": {
         "opencode": {
-          "binaryPath": "C:\\Users\\Administrator\\.obsidian-copilot\\opencode\\2.0.22\\bin\\opencode.exe",
-          "binaryVersion": "2.0.22",
+          "binaryPath": "C:\\Users\\Administrator\\.obsidian-copilot\\opencode\\2.0.32\\bin\\opencode.exe",
+          "binaryVersion": "2.0.32",
           "binarySource": "managed",
           "probeSessionId": "ses_eb30aa19fffeNY1Zd9lMARQ1R3"
         }
@@ -540,6 +541,15 @@
       },
       "configuredModelId": "6e7d4998-c02e-4182-bd1e-0c5b5df5c28e",
       "configuredAt": 1793696103521
+    },
+    {
+      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
+      "info": {
+        "id": "opencode/crouton-alpha-free",
+        "displayName": "opencode/Crouton Alpha Free"
+      },
+      "configuredModelId": "6d3c2c31-85b1-4b48-b639-1d8cefdc5006",
+      "configuredAt": 1793758105652
     }
   ],
   "backends": {
