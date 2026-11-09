@@ -215,6 +215,61 @@ RFC 8446 附录 E.3 明确指出：
 2. **TLS 1.3**：Wireshark 只能看到外层 `application_data`，**记录类型、内层长度拆分都需要密钥**。仅有的启发式手段是看每条记录的总长度分布和方向。
 3. **不要误判心跳**：TLS 心跳扩展（RFC 6520）在 TLS 1.3 中已不再使用；不要在 1.3 里找 `heartbeat` 记录类型。
 
+#### 4.6.1 "内层长度拆分"到底指什么
+
+这是相对**外层 `TLSCiphertext.length`** 而言的。外层 `length` 是密文记录的**总长**：
+
+$$
+L_{\text{outer}} = \lvert content \rvert + 1 + \lvert zeros \rvert + t
+$$
+
+其中 $1$ 是 `TLSInnerPlaintext.type` 的 1 字节，$t$ 是 AEAD 认证标签（tag）长度，**由协商出的 AEAD 算法决定**（详见下方说明）。
+
+所以"内层长度拆分"指：**在不知道密钥的前提下，无法把 $L_{\text{outer}}$ 拆成"真实内容 / 类型字节 / 填充 / AEAD tag"这几段。**
+
+| 拆分目标 | 无密钥能否得知 | 原因 |
+|---|---|---|
+| 记录总长 $L_{\text{outer}}$ | ✅ 能 | 明文头里直接给出 |
+| AEAD tag 长度 $t$ | ⚠️ 取决于是否已知套件 | 由 AEAD 算法决定，见下节 |
+| 真实内容长度 $\lvert content \rvert$ | ❌ 不能 | 与 padding 混淆 |
+| 填充长度 $\lvert zeros \rvert$ | ❌ 不能 | 被加密 |
+| 内层真实类型 $type$ | ❌ 不能 | 被加密 |
+
+> [!info] AEAD tag 长度由算法决定
+> TLS 1.3 的 `TLSCiphertext.length` 定义中写明它等于"内容 + 填充 + 1（内层 type）+ **AEAD 算法带来的 expansion**"（RFC 8446 §5.2）。这个 expansion 就是认证标签（tag/MAC）长度，**完全由 AEAD 算法决定，与 TLS 版本、记录长度无关**：
+>
+> | AEAD 算法 | tag 长度 | TLS 1.3 套件 |
+> |---|---|---|
+> | AES-128-GCM / AES-256-GCM | **16 字节（128 bit）** | `TLS_AES_128_GCM_SHA256`、`TLS_AES_256_GCM_SHA384` |
+> | ChaCha20-Poly1305 | **16 字节（128 bit）** | `TLS_CHACHA20_POLY1305_SHA256` |
+> | AES-128-CCM | **16 字节** | `TLS_AES_128_CCM_SHA256` |
+> | AES-128-CCM-8 | **8 字节** | `TLS_AES_128_CCM_8_SHA256` |
+>
+> 规范只约束"expansion 不得超过 255 字节"（§5.2），具体值由每种 AEAD 定义给出。
+> 因此：**若已知协商出的套件，$t$ 就是确定值；若不知道套件（没有 ServerHello 或已加密），只能按"常见 16 字节"做假设**——这也正是无密钥分析中常被忽略的地方。
+>
+> 加密算法（AES / ChaCha20）决定的是**加解密本身**，tag 长度属于**AEAD 模式（GCM / CCM / Poly1305）**的属性。例如同为 AES，GCM 模式 tag 为 16 字节，而 CCM 可配 8 或 16 字节。
+
+> [!important] 关键纠正
+> **"排除 padding 后的实际长度"这个说法只在接收方的内部视角成立**——接收方解密后剥掉填充，构造出 `TLSPlaintext` 交给上层时，其 `length` 是真实内容长度。
+> 但这**不是线上携带的字段**。RFC 8446 §5.1 的 `TLSPlaintext` 只是描述"记录层与上层协议之间的接口"，并不在报文中出现；`TLSInnerPlaintext` 本身也**没有长度字段**。
+
+```text
+线上 TLSCiphertext                     解密后 TLSInnerPlaintext
++------+--------+--------+-----------+   +---------+------+-------+
+| 0x17 | 0x0303 | Louter | cipher    |→  | content | type | zeros |
++------+--------+--------+-----------+   +---------+------+-------+
+                         ↑ 只有这里有一段可读的长度；内部结构靠"从尾部找第一个非零字节"切分
+```
+
+| 视角 | 有长度字段吗 | 含义 |
+|---|---|---|
+| 线上 `TLSCiphertext` | 有，明文 `uint16` | 密文总长（含 type 字节、padding、AEAD tag） |
+| 解密后 `TLSInnerPlaintext` | **无** | 只有 `content`、`type`、`zeros` 三个字段，边界靠扫描确定 |
+| 交给上层 `TLSPlaintext` | 有但**不传输** | `length = |content|`，仅实现内部使用 |
+
+Wireshark 未配置密钥时只能显示 `Length: 1234`（外层密文长度）；配置 `SSLKEYLOGFILE` 解密成功后，才会显示 "Application Data (N bytes)" 里的真实 N。
+
 ## 5. 端口与典型部署
 
 TLS 可部署在任意 TCP 端口上，常见的注册端口如下：
