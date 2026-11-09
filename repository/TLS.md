@@ -144,6 +144,44 @@ uint8 zeros[length_of_padding];
 - **长度上限**：`TLSCiphertext.length` 不得超过 $2^{14} + 256$ 字节。
 - **padding 可选**：实现自行决定是否填充，填充量为 0 即"不填充"。
 
+#### 4.3.1 外层 opaque_type 恒为 0x17
+
+RFC 8446 §5.2 的 `TLSCiphertext` 定义中把该字段写成**带默认值的常量**：
+
+```text
+struct {
+    ContentType opaque_type = application_data;      /* 23 */
+    ProtocolVersion legacy_record_version = 0x0303;  /* TLS v1.2 */
+    uint16 length;
+    opaque encrypted_record[TLSCiphertext.length];
+} TLSCiphertext;
+```
+
+规范原文（§5.2）：
+
+> The outer opaque_type field of a TLSCiphertext record is **always set to the value 23 (application_data)** for outward compatibility with middleboxes accustomed to parsing previous versions of TLS. **The actual content type of the record is found in TLSInnerPlaintext.type after decryption.**
+
+结构对照：
+
+```text
+TLS 1.3 加密记录（线上可见）:
++--------+----------+--------+---------------------------------------------+
+| 0x17   | 0x0303   | length | encrypted_record                            |
+| 明文   | 明文     | 明文   |  = AEAD( content + real_type + zeros[] )    |
++--------+----------+--------+---------------------------------------------+
+                                       ^^^^^^^^^   都看不到
+真实类型（握手 0x16 / 警报 0x15 / 应用数据 0x17）在密文里
+```
+
+三个要点：
+
+1. **只有加密记录才恒为 `0x17`**。握手早期的 `ClientHello`、`ServerHello` 记录仍是未加密的 `TLSPlaintext`，此时外层 `type` 是真实值 `0x16`（握手），版本为 `0x0301`（首个 ClientHello，兼容用）或 `0x0303`；`ChangeCipherSpec` 兼容记录也是明文 `0x14`。即**"恒为 0x17"只对 `TLSCiphertext` 成立**。
+2. **目的是中间盒兼容（ossification）**。部分老防火墙/中间盒只认识握手与 `application_data` 两类记录，统一标成 `0x17` 可避免它们因看到陌生记录类型而拦截或报错。
+3. **真实类型并未丢失，只是被加密**。解密后由 `TLSInnerPlaintext.type` 给出；定位方式是解密后从尾部向前扫描第一个非零字节。
+
+> [!note] 校验路径
+> 因此抓包时无法靠外层类型判断版本，必须看 `ServerHello` 中 `supported_versions` 扩展是否协商出 `0x0304`；也可以观察 `ServerHello` 之后是否仍出现明文的 `0x16` / `0x15` 记录——若出现则为 1.2 或更早。
+
 ### 4.4 1.3 的填充并不彻底解决流量分析
 
 RFC 8446 附录 E.3 明确指出：
@@ -223,5 +261,17 @@ TLS 可部署在任意 TCP 端口上，常见的注册端口如下：
 - 上层应用：HTTP/1.1、HTTP/2（HTTPS 场景）、SMTPS / IMAPS / LDAPS 等
 - 密钥与证书：X.509 证书、RSA / ECDHE 密钥交换
 - 相关协议：QUIC（UDP 443，内置 TLS 1.3 握手）
-- 延伸阅读：RFC 8446 §5.4（Record Padding）、附录 E.3（Traffic Analysis）
+- 延伸阅读：RFC 8446 §5.2 / §5.4（记录保护与填充）、附录 E.3（Traffic Analysis）
+
+## 官方文档
+
+- **TLS 1.3（现行标准）**：RFC 8446 — <https://www.rfc-editor.org/rfc/rfc8446.html>
+- **TLS 1.2**：RFC 5246 — <https://www.rfc-editor.org/rfc/rfc5246.html>
+- **RFC 编辑器 TLS 系列索引**：<https://www.rfc-editor.org/rfc-index.html>（检索关键字 TLS）
+- **IANA 注册表**：
+  - TLS ContentType：<https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml>
+  - TLS Cipher Suites：<https://www.iana.org/assignments/tls-parameters/tls-parameters.xhtml#tls-parameters-4>
+  - 服务端口（含 443）：<https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml>
+- **IETF TLS 工作组**：<https://datatracker.ietf.org/wg/tls/about/>
+- **RFC 8446 中文相关补充**：RFC 7627（会话哈希）、RFC 6520（心跳，1.3 已弃用）、RFC 7301（ALPN）
 
