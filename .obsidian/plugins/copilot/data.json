@@ -536,15 +536,6 @@
     {
       "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
       "info": {
-        "id": "opencode/crouton-alpha-free",
-        "displayName": "opencode/Crouton Alpha Free"
-      },
-      "configuredModelId": "6d3c2c31-85b1-4b48-b639-1d8cefdc5006",
-      "configuredAt": 1793758105652
-    },
-    {
-      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
-      "info": {
         "id": "opencode/iceman-free",
         "displayName": "opencode/Iceman Free"
       },
@@ -568,6 +559,15 @@
       },
       "configuredModelId": "21306290-e1f3-4359-84eb-4f0b3e515697",
       "configuredAt": 1794232427529
+    },
+    {
+      "providerId": "a1de3bbb-f9bd-423a-8502-8891c2f44f7a",
+      "info": {
+        "id": "opencode/minimax-m3.1-flash-free",
+        "displayName": "opencode/MiniMax M3.1 Flash Free"
+      },
+      "configuredModelId": "b8b89f94-8651-4810-a58a-b1486d2f5f6a",
+      "configuredAt": 1794322118727
     }
   ],
   "backends": {
